@@ -1,0 +1,20 @@
+<html>
+
+<head />
+
+<body>
+  <div id="example">
+    <script src="net_contagion.js"></script>
+    <script>
+      var exampleOpts = { radius: 10, maxHeat: 8, width: 600, height: 600, build: "square", id: "example" };
+      var sim1;
+      document.body.onload = function () {
+        sim1 = new ContagionSimulation(exampleOpts);
+      }
+    </script>
+    <input type="button" value="Start" onclick="sim1.start()" id="startButton">
+    <input type="button" value="Stop" onclick="sim1.stop()">
+  </div>
+</body>
+
+</html>
